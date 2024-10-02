@@ -1,0 +1,8 @@
+version: 1
+services:
+  - type: web
+    name: RouteVision
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app  # Change 'app' to your Flask app filename without the .py
+    autoDeploy: true
