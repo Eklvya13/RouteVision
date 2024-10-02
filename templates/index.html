@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Visualization</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"/>
+    <style>
+        #map { height: 600px; }
+        #route-select { margin: 20px; }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div id="form-container">
+        <div id="route-select">
+            <label for="routes">Choose a route:</label>
+            <select id="routes">
+                <option value="route1">Route 1</option>
+                <option value="route2">Route 2</option>
+                <option value="route3">Route 3</option>
+            </select>
+        </div>
+    
+        <div id="controls">
+            <label for="timeSlider">Adjust Time:</label>
+            <input type="range" id="timeSlider" min="0" max="100" value="0" step="1" />
+            
+            <label for="speedControl">Speed:</label>
+            <div>
+                <input type="radio" id="speed1x" name="speed" value="1" checked> 1x
+                <input type="radio" id="speed2x" name="speed" value="2"> 2x
+                <input type="radio" id="speed5x" name="speed" value="5"> 5x
+            </div>
+    
+            <p id="currentTimestamp">Timestamp: N/A</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+#map {
+    height: 60vh;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 2px solid #4CAF50;
+}
+
+
+
+#form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#route-select, #controls {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#route-select label, #controls label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#routes, #timeSlider {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 1em;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+}
+
+#controls input[type="radio"] {
+    margin-left: 10px;
+}
+
+#currentTimestamp {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff;
+}
