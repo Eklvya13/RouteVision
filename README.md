@@ -111,7 +111,7 @@ The following decisions were made during the development of the RouteVision appl
 
 Here are some images showcasing the RouteVision application in action:
 
-![Route Visualization](screenshots/interface.png)
+![Route Visualization](screenshots/index.png)
 *Route Visualization*
 
 ![Select Routes](screenshots/routes.png)
